@@ -10,7 +10,6 @@ origin_url = "https://icarus-icsd.aegean.gr/"
 
 username = input("Όνομα χρήστη : ")
 password = getpass.getpass(prompt="Συνθηματικό  : ")
-print()
 
 # get cookie
 request = urllib.request.Request(url=origin_url)
@@ -218,7 +217,7 @@ def calc_average_grade():
     mandatory = total - circle_1 - circle_2 - circle_3 - circle_4 - circle_5 - circle_6 - english - other
 
     print()
-    if (exams >= len(exams_grades)):
+    if (exams >= len(exams_grades) and exams > 0):
         print("Τρέχουσα εξεταστική                      :\033[32m", exams, "/", len(exams_grades), "\033[0m")
     else:
         print("Τρέχουσα εξεταστική                      :", exams, "/", len(exams_grades))
