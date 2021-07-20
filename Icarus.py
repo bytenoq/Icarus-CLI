@@ -98,22 +98,22 @@ def calc_average_grade():
         elif (course["code"] == "321-0101 "):
             english = True
 
-        elif (course["code"] == "321-9703 " or course["code"] == "321-5753 " or course["code"] == "321-8053 " or course["code"] == "321-10753 " or course["code"] == "321-99101 " or course["code"] == "321-7406 "):
+        elif (course["code"] == "321-9703 " or course["code"] == "321-5753 " or course["code"] == "321-8053 " or course["code"] == "321-10753 " or course["code"] == "321-99101 "):
             circle_1 += 1
 
-        elif (course["code"] == "321-8953 " or course["code"] == "321-5155 " or course["code"] == "321-8504 " or course["code"] == "321-11102 " or course["code"] == "321-7653 " or course["code"] == "321-5607 " or course["code"] == "321-5403 "):
+        elif (course["code"] == "321-8953 " or course["code"] == "321-5155 " or course["code"] == "321-8504 " or course["code"] == "321-11102 " or course["code"] == "321-7653 " or course["code"] == "321-5608 " or course["code"] == "321-5403 " or course["code"] == "321-7654 " or course["code"] == "321-8954 " or course["code"] == "321-5404 "):
             circle_2 += 1
 
-        elif (course["code"] == "321-10302 " or course["code"] == "321-7051 " or course["code"] == "321-7803 " or course["code"] == "321-9703 " or course["code"] == "321-8752 " or course["code"] == "321-7853 " or course["code"] == "321-10652 " or course["code"] == "321-6555 " or course["code"] == "321-8653 "):
+        elif (course["code"] == "321-10302 " or course["code"] == "321-7051 " or course["code"] == "321-7803 " or course["code"] == "321-8752 " or course["code"] == "321-7853 " or course["code"] == "321-10652 " or course["code"] == "321-6555 " or course["code"] == "321-8653 " or course["code"] == "321-9353 " or course["code"] == "321-3250 "):
             circle_3 += 1
 
-        elif (course["code"] == "321-8354 " or course["code"] == "321-7003 " or course["code"] == "321-7256 " or course["code"] == "321-11001 " or course["code"] == "321-6257 " or course["code"] == "321-9404 " or course["code"] == "321-9120 "):
+        elif (course["code"] == "321-8354 " or course["code"] == "321-7003 " or course["code"] == "321-7256 " or course["code"] == "321-11001 " or course["code"] == "321-6257 " or course["code"] == "321-9404 " or course["code"] == "321-9120 " or course["code"] == "321-9405 " or course["code"] == "321-11002 "):
             circle_4 += 1
 
         elif (course["code"] == "321-7754 " or course["code"] == "321-3553 " or course["code"] == "321-9253 " or course["code"] == "321-10202 " or course["code"] == "321-7406 " or course["code"] == "321-6606 "):
             circle_5 += 1
 
-        elif (course["code"] == "321-8603 " or course["code"] == "321-99002 " or course["code"] == "321-9455 " or course["code"] == "321-8001 " or course["code"] == "321-9855 " or course["code"] == "321-9003 " or course["code"] == "321-10001 "):
+        elif (course["code"] == "321-8603 " or course["code"] == "321-99002 " or course["code"] == "321-9455 " or course["code"] == "321-8001 " or course["code"] == "321-9855 " or course["code"] == "321-9003 " or course["code"] == "321-10001 " or course["code"] == "321-9004 "):
             circle_6 += 1
 
     for course in exams_grades:
@@ -158,28 +158,28 @@ def calc_average_grade():
                 total += 1
                 exams += 1
 
-        elif (course["code"] == "321-9703 " or course["code"] == "321-5753 " or course["code"] == "321-8053 " or course["code"] == "321-10753 " or course["code"] == "321-99101 " or course["code"] == "321-7406 "):
+        elif (course["code"] == "321-9703 " or course["code"] == "321-5753 " or course["code"] == "321-8053 " or course["code"] == "321-10753 " or course["code"] == "321-99101 "):
             if (course["status"] == "Επιτυχία "):
                 circle_1 += 1
                 grades_sum += float(course["grade"])
                 total += 1
                 exams += 1
 
-        elif (course["code"] == "321-8953 " or course["code"] == "321-5155 " or course["code"] == "321-8504 " or course["code"] == "321-11102 " or course["code"] == "321-7653 " or course["code"] == "321-5607 " or course["code"] == "321-5403 "):
+        elif (course["code"] == "321-8953 " or course["code"] == "321-5155 " or course["code"] == "321-8504 " or course["code"] == "321-11102 " or course["code"] == "321-7653 " or course["code"] == "321-5608 " or course["code"] == "321-5403 " or course["code"] == "321-7654 " or course["code"] == "321-8954 " or course["code"] == "321-5404 "):
             if (course["status"] == "Επιτυχία "):
                 circle_2 += 1
                 grades_sum += float(course["grade"])
                 total += 1
                 exams += 1
 
-        elif (course["code"] == "321-10302 " or course["code"] == "321-7051 " or course["code"] == "321-7803 " or course["code"] == "321-9703 " or course["code"] == "321-8752 " or course["code"] == "321-7853 " or course["code"] == "321-10652 " or course["code"] == "321-6555 " or course["code"] == "321-8653 "):
+        elif (course["code"] == "321-10302 " or course["code"] == "321-7051 " or course["code"] == "321-7803 " or course["code"] == "321-8752 " or course["code"] == "321-7853 " or course["code"] == "321-10652 " or course["code"] == "321-6555 " or course["code"] == "321-8653 " or course["code"] == "321-9353 " or course["code"] == "321-3250 "):
             if (course["status"] == "Επιτυχία "):
                 circle_3 += 1
                 grades_sum += float(course["grade"])
                 total += 1
                 exams += 1
 
-        elif (course["code"] == "321-8354 " or course["code"] == "321-7003 " or course["code"] == "321-7256 " or course["code"] == "321-11001 " or course["code"] == "321-6257 " or course["code"] == "321-9404 " or course["code"] == "321-9120 "):
+        elif (course["code"] == "321-8354 " or course["code"] == "321-7003 " or course["code"] == "321-7256 " or course["code"] == "321-11001 " or course["code"] == "321-6257 " or course["code"] == "321-9404 " or course["code"] == "321-9120 " or course["code"] == "321-9405 " or course["code"] == "321-11002 "):
             if (course["status"] == "Επιτυχία "):
                 circle_4 += 1
                 grades_sum += float(course["grade"])
@@ -193,7 +193,7 @@ def calc_average_grade():
                 total += 1
                 exams += 1
 
-        elif (course["code"] == "321-8603 " or course["code"] == "321-99002 " or course["code"] == "321-9455 " or course["code"] == "321-8001 " or course["code"] == "321-9855 " or course["code"] == "321-9003 " or course["code"] == "321-10001 "):
+        elif (course["code"] == "321-8603 " or course["code"] == "321-99002 " or course["code"] == "321-9455 " or course["code"] == "321-8001 " or course["code"] == "321-9855 " or course["code"] == "321-9003 " or course["code"] == "321-10001 " or course["code"] == "321-9004 "):
             if (course["status"] == "Επιτυχία "):
                 circle_6 += 1
                 grades_sum += float(course["grade"])
